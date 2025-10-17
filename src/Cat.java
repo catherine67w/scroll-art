@@ -1,6 +1,6 @@
  import java.util.Random;
 
-public class App {
+public class Cat {
     static final int WIDTH = getTerminalWidth() - 1;
     static final int CAT_WIDTH = 15;
     static final int CAT_HEIGHT = 7;
@@ -13,7 +13,7 @@ public class App {
         }
 
         while (true) {
-            for (int x = 0; x < WIDTH - CAT_WIDTH; x++) {
+            for (int x = 0; x < WIDTH - CAT_WIDTH; x=x+15) {
                 if (rand.nextDouble() < 0.01) {
                     char[][] img;
                     img = getBunny();
